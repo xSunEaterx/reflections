@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    It creates a unvisible fold named '.git'. You need it to be able to commit.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+    It is a space between them to select the files you want to commit. Selection.
