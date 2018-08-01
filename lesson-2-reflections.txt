@@ -1,8 +1,53 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-    It creates a unvisible fold named '.git'. You need it to be able to commit.
+    git init
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+    It creates a invisible fold named '.git'. You need it to be able to
+    commit.
 
-    It is a space between them to select the files you want to commit. Selection.
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+    git status
+
+    It is a space between them to select the files you want to commit.
+    Selection.
+
+How can you use the staging area to make sure you have one commit per
+logical change?
+
+    git diff --staged : compares staging area with commit1 (last)
+
+    Allows you to commit only what you meant.
+
+What are some situations when branches would be helpful in keeping your
+history organized? How would branches help?
+
+    git branch : see the branches you have
+    git branch "name" : create new branch
+
+    For modifications not related with the original objective or
+    experiments, bugs corrections. (Never breaks, Always works)
+    In this way you can work on different objectives (the original and
+    also the new ones). Keep it organized.
+
+How do the diagrams help you visualize the branch structure?
+
+    git log --graph --oneline 'branch_name1' ... 'branch_nameX'
+
+    Allows you to understand (keep track) better how commits and
+    branches are related (containers). Helps you to know were you
+    are and if the changes you make affect the code. VISUALIZATION
+
+What is the result of merging two branches together? Why do we
+represent it in the diagram the way we do?
+
+    git merge 'branch_name1' 'branch_name2' : stays the branch you
+    are working on (git branch 'name')
+
+    You can access both commits. Visualization.
+
+What are the pros and cons of Git's automatic merging vs. always
+doing merges manually?
+
+    Time spent.
